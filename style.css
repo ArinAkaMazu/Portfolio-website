@@ -48,12 +48,25 @@ nav li a:hover{
     margin: 20px 0;
 }
 .rightsection img{
-    width: 100%;
-    size: 20px;
+    width: 118%;
     height: 100%;
     
 }
 .purple{
     color: #8015be;
 }
-    
+#element{
+    color: #8015be;
+}
+.leftsection .btn{
+    padding: 12px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #1e2167;
+}
+.leftsection .buttons{
+    padding: 40px 0;
+}
