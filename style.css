@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -75,7 +74,7 @@ nav li a:hover{
 }
 .secondsection{
     max-width: 100%;
-    height: 80vh;
+    height: 100vh;
 }
 main hr{
     border: 0;
@@ -96,16 +95,18 @@ main h1{
     width: 70vw;
     height: 2px;
     margin: 80px 0 0 210px;
+    justify-content: center;
 }
-.secondsection .verticle{
+.verticle{
     height: 93px;
     width: 2px;
+    min-width: 2px;
     background-color: rgb(255, 255, 255);
     margin: 0px 120px;
-    flex: auto;
+    flex: 0 1 auto;
 }
+
 .timeline{
     display: flex;
-    width: auto;
-    flex: auto;
+    width: 70vw;
 }
