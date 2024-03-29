@@ -59,16 +59,19 @@ nav li a:hover{
     color: #8015be;
 }
 .leftsection .btn{
-    padding: 12px;
+    padding: 15px;
     color: white;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 6px;
     font-size: 20px;
     cursor: pointer;
     background-color: #1e2167;
 }
+.leftsection .btn:hover{
+    background-color: #0a0c30;
+}
 .leftsection .buttons{
-    padding: 40px 0;
+    padding: 35px 0;
 }
 .secondsection{
     max-width: 100%;
@@ -81,16 +84,25 @@ main hr{
     margin: 5px 84px;
 } 
 main h1{
-    margin: 0px 120px 0px 84px;
+    margin: 15px 120px 0px 84px;
     font-size: 1.4rem;
 }
 .grey{
     color: rgb(212, 208, 208);
-    margin: 0px 120px 0px 84px;
+    margin: 10px 120px 0px 84px;
 }
 .secondsection .box{
     background: white;
-    width: 80vw;
+    width: 70vw;
     height: 2px;
-    margin: 156px 0;
+    margin: 70px 0 0 210px;
+    display: flex;
+    
+}
+.secondsection .verticle{
+    height: 93px;
+    width: 2px;
+    background-color: rgb(231, 27, 27);
+    margin: 0px 120px;
+    
 }
