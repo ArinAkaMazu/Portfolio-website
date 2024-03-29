@@ -95,14 +95,17 @@ main h1{
     background: white;
     width: 70vw;
     height: 2px;
-    margin: 70px 0 0 210px;
-    display: flex;
-    
+    margin: 80px 0 0 210px;
 }
 .secondsection .verticle{
     height: 93px;
     width: 2px;
-    background-color: rgb(231, 27, 27);
+    background-color: rgb(255, 255, 255);
     margin: 0px 120px;
-    
+    flex: auto;
+}
+.timeline{
+    display: flex;
+    width: auto;
+    flex: auto;
 }
