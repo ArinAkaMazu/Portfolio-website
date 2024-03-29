@@ -90,23 +90,47 @@ main h1{
     color: rgb(212, 208, 208);
     margin: 10px 120px 0px 84px;
 }
-.secondsection .box{
-    background: white;
-    width: 70vw;
-    height: 2px;
-    margin: 80px 0 0 210px;
-    justify-content: center;
-}
-.verticle{
-    height: 93px;
-    width: 2px;
-    min-width: 2px;
-    background-color: rgb(255, 255, 255);
-    margin: 0px 120px;
-    flex: 0 1 auto;
-}
-
-.timeline{
+.container{
     display: flex;
-    width: 70vw;
+    margin-left: 15vh;
+    box-shadow: -30px 30px;
+}
+.card{
+    color: black;
+    background: white;
+    width: 270px;
+    height: auto;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: -30px 30px 20px;
+}
+.card-image{
+    background-color: #8015be;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 3px 3px 0 0;
+}
+.excel{
+    background-image: url("https://imgs.search.brave.com/DquRTN-OKeDYWgMgtoGUhHus5B70v4h07w9_Ruln5Hw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hcnRp/Y2xlcy1pbWcuc2Z0/Y2RuLm5ldC9mX2F1/dG8sdF9hcnRpY2xl/X2NvdmVyX3hsL2F1/dG8tbWFwcGluZy1m/b2xkZXIvc2l0ZXMv/My8yMDIxLzEwL1do/YXQtSXMtRXhjZWwt/YW5kLWhvdy1pdC13/b3Jrcy0xLmpwZw");
+}
+.card a{
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+.power-bi{
+    background-image: url("https://imgs.search.brave.com/BCifwkka9tg2v-Vxkh9ADAL8Zql013rBRfdX-Ju19sQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly96b29t/Y2hhcnRzd2Vic3Rv/cmFnZS5ibG9iLmNv/cmUud2luZG93cy5u/ZXQvYmxvZy90aF8y/MDIzMDIwOV8xNzQw/MzhfY292ZXItYmxv/Zy5wbmc");
+
+}
+.qr-code{
+    background-image: url("https://imgs.search.brave.com/MwIIQSYUXZXasxIPjv_4NVaS9A_ndRy0WBEWdfDLlzk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMudG9wdGFsLmlv/L2ltYWdlcz91cmw9/aHR0cHM6Ly9icy11/cGxvYWRzLnRvcHRh/bC5pby9ibGFja2Zp/c2gtdXBsb2Fkcy9j/b21wb25lbnRzL2Js/b2dfcG9zdF9wYWdl/L2NvbnRlbnQvY292/ZXJfaW1hZ2VfZmls/ZS9jb3Zlcl9pbWFn/ZS82ODczNDEvcmVn/dWxhcl8xNzA4eDY4/M19zdGFnaW5nLnRv/cHRhbC5uZXRfb3Bl/bmN2X3B5dGhvbi1p/bWFnZS1wcm9jZXNz/aW5nLWluLWNvbXB1/dGF0aW9uYWwtcGhv/dG9ncmFwaHktNDIx/ZjRlOGMyZTcyMzg4/ZWJhYTlkOTdkNDJm/MGQ2ZmUucG5n");
+}
+.ai-assistant{
+    background-image: url("https://imgs.search.brave.com/Y7oMLZs_m8wbCt0wIaSWvc5UNfwjEL4VpcxmYrn8LRw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/aS10ZWNobm9sb2d5/LW1pY3JvY2hpcC1i/YWNrZ3JvdW5kLWRp/Z2l0YWwtdHJhbnNm/b3JtYXRpb24tY29u/Y2VwdF81Mzg3Ni0x/MjQ2NjkuanBnP3Np/emU9NjI2JmV4dD1q/cGc");
+}
+.card p{
+    text-align: justify;
 }

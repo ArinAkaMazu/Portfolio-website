@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(10, 1, 32);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #14214d
+}
+nav ul{
+    justify-content: center;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0,25px;
+    margin-right: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover{
+    color: rgb(108, 131, 196);
+}
+.left{
+    font-size: 1.4rem;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.box {
+    background-color: #f0f0f0; /* Example background color */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 8px; /* Rounded corners */
+    width: 32%; /* Approximately 33% width for each box */
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.box {
+    background-color: rgb(10, 1, 32); /* Example background color */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 8px; /* Rounded corners */
+    width: 28%; /* Approximately 33% width for each box */
+    height: 80vh;
+    border: 2px solid white;
+}
+.box h2{
+    text-align: center;
+}
+.box p{
+    margin: 10px;
+}
+.socials img{
+    width: 40px;
+    margin-top: 60px;
+    
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    margin-bottom: 95px;
+    margin-left: 14px;
+    
+}
