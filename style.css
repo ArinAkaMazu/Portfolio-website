@@ -190,5 +190,6 @@ footer a {
   }
   .card {
     max-width: 40%;
+    max-height: 700px;
   }
 }
