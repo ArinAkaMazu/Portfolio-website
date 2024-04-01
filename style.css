@@ -184,3 +184,11 @@ footer a {
   width: 40px;
   padding: -2px;
 }
+@media (min-width: 1400px) {
+  .secondsection {
+    max-height: 60vh;
+  }
+  .card {
+    max-width: 40%;
+  }
+}
