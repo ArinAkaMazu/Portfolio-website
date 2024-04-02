@@ -3,8 +3,8 @@
   padding: 0;
 }
 body {
-  background-color: rgb(10, 1, 32);
-  color: rgb(248, 239, 239);
+  background-color: #151515;
+  color: rgb(242, 242, 242);
   font-family: "Poppins", sans-serif;
 }
 nav {
@@ -12,7 +12,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 80px;
-  background-color: #14214d;
+  background-color: #8348ff;
 }
 nav ul {
   justify-content: center;
@@ -25,10 +25,10 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(242, 242, 242);
 }
 nav li a:hover {
-  color: rgb(108, 131, 196);
+  color: rgb(70, 18, 94);
 }
 .left {
   font-size: 1.4rem;
@@ -51,14 +51,14 @@ nav li a:hover {
   height: 100%;
 }
 .purple {
-  color: #8015be;
+  color: #8348ff;
 }
 #element {
-  color: #8015be;
+  color: #8348ff;
 }
 .leftsection .btn {
   padding: 15px;
-  color: white;
+  color: rgb(242, 242, 242);
   border: 1px solid white;
   border-radius: 6px;
   font-size: 20px;
@@ -112,7 +112,6 @@ main h1 {
 .card:hover {
   transform: scale(1.1);
   z-index: 1;
-  cursor: pointer;
 }
 .card h2 {
   padding: 10px;
@@ -156,10 +155,10 @@ h2 {
   text-align: center;
 }
 .card a:hover {
-  color: rgb(108, 131, 196);
+  color: rgb(205, 202, 206);
 }
 footer {
-  background-color: #0e0e1a;
+  background-color: #8348ff;
   height: 220px;
 }
 .footer {
@@ -175,7 +174,7 @@ footer a {
   color: white;
 }
 .footer a:hover {
-  color: rgb(108, 131, 196);
+  color: rgb(70, 18, 94);
 }
 .footer > div {
   width: 224px;
