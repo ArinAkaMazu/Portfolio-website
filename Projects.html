@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
   </head>
+  <link rel="stylesheet" href="projects.css" />
   <body>
     <header>
       <nav>
@@ -33,39 +34,8 @@
       </nav>
     </header>
     <main>
-      <section class="firstsection">
-        <div class="leftsection">
-          <div class="tagline">
-            <!-- I changed the span tag with the purple class into a b tag so I could put the rest of the text on this line in its own span tag. -->
-            <span>Hi! My name is <b class="purple">Arin</b></span>
-            <pre>and I am a passionate</pre>
-            <span id="element"></span>
-          </div>
-          <div class="buttons">
-            <!-- I removed the inline styles since they aren't necessary. Inline styles are typically for when you have to style something programmatically to account for live page changes and not when you know how the styles will be all of the time.
-            Also the download HTML attribute doesn't need a value assigned. You can just type it in by itself. -->
-            <a class="btn" href="Arin_Kaushik_Resume.pdf" download>
-              <!-- So you had a button tag inside of an anchor tag before. You don't need to do this since an anchor can have button styling on it and work the same way a button would. -->
-              Download Resume
-            </a>
-            <!-- If you're going to link to a page offsite, you should put in target="_blank" on the anchor tag so it opens in a new window -->
-            <a class="btn" target="_blank" href="https://github.com/ArinAkaMazu"
-              >Visit Github</a
-            >
-          </div>
-        </div>
-        <div class="rightsection">
-          <!-- Whenever you have an img tag on a page, make sure it has a proper value for its alt attribute. They're super important for screen readers and search engine optimization.
-          Also I downloaded the image and put it into the root folder for the page so that way you don't have to worry about the site you're loading it from not having the image when you call for it from your webpage. -->
-          <img
-            src="./images/data-analyst-illus.png"
-            alt="An illustration of a person explaining data diagrams on a laptop"
-          />
-        </div>
-      </section>
       <section class="secondsection">
-        <hr />
-        <span class="grey">What I have done so far</span>
+        <br />
         <!-- Changed this to an H2 tag since you don't want more than H1 tag on a page (it's an SEO thing). -->
         <h2>Projects</h2>
         <div class="container">
@@ -130,7 +100,6 @@
         </div>
       </section>
     </main>
-    <br />
     <footer>
       <!-- Changed this div's class name so it isn't confused with the actual footer tag. -->
       <div class="footer-wrapper">
@@ -191,16 +160,5 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        //It's best for when you're going to make changes to the DOM after the page load to put the JavaScript for such changes inside of a DOMContentLoaded event listener.
-        var typed = new Typed("#element", {
-          strings: ["Data Analyst"],
-          typeSpeed: 95,
-        });
-      });
-    </script>
   </body>
 </html>

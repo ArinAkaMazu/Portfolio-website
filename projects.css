@@ -1,0 +1,353 @@
+:root {
+  --brand-purple: #8348ff;
+  --brand-purple-darker: #5e2cc8;
+  --off-black: #151515;
+  --off-white: #f2f2f2;
+  --grey: #d4d0d0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--off-black);
+  color: var(--off-white);
+  font-family: "Poppins", sans-serif;
+}
+a {
+  /* Adds a nice transition for any changes on anchor tag styling. */
+  transition: 0.3s ease all;
+}
+nav {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  background-color: var(--brand-purple);
+}
+/*Typically containers on a desktop page tend to be 1170px in width. This helps make all of the vertical alignment on a page consistent. */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1170px;
+}
+nav ul {
+  margin-top: 3px;
+  justify-content: center;
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  /*Removed the margin styles applied originally*/
+}
+nav ul li:not(:last-of-type) {
+  /*This will make it so the nav items are even spacely by giving all but the last one right margin of 25px. */
+  margin-right: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--off-white);
+  font-weight: 900;
+  padding: 5px;
+}
+nav li a:hover {
+  background-color: var(--brand-purple-darker);
+}
+.secondsection {
+  margin: 0 auto;
+  width: 1170px;
+}
+.secondsection > span {
+  font-size: 1.3em;
+  font-style: italic;
+}
+.secondsection .container {
+  display: flex;
+  justify-content: space-between;
+}
+main hr {
+  border: 0;
+  background: var(--brand-purple);
+  height: 1.2px;
+  margin: 5px 0;
+}
+main h2 {
+  margin: 15px auto 0;
+  text-align: center;
+  font-size: 3rem;
+}
+.grey {
+  color: var(--grey);
+  margin: 15px 0 0;
+}
+.card {
+  /* Shorthand for black is #000. */
+  color: #000;
+  background: var(--off-white);
+  width: calc(25% - 30px);
+  height: auto;
+  margin: 30px 15px;
+  border-radius: 3px;
+  border: 1px solid var(--off-black);
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.9s ease transform;
+  display: block;
+  justify-content: center;
+}
+.card:first-of-type {
+  margin-left: 0;
+}
+.card:last-of-type {
+  margin-right: 0;
+}
+.card:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.card h3 {
+  padding: 10px;
+  text-align: center;
+}
+.card-image {
+  background-color: var(--brand-purple-darker);
+  height: 170px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 3px 3px 0 0;
+}
+.card a {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  text-decoration: none;
+}
+/* Changed the card button hover state to be nicer looking and easier to read. */
+.card a:hover {
+  background-color: var(--brand-purple);
+}
+.card p {
+  padding: 10px;
+}
+.excel {
+  /* Saved all of the background images to an images folder local to your site so you'll always have the images on hand. Also if you do have to link to offsite images, it's best to link to them from their actual web location instead of a relative location like the URL a search engine gives you. */
+  background-image: url("./images/excel.png");
+}
+.power-bi {
+  background-image: url("./images/laptop-chart.png");
+}
+.qr-code {
+  background-image: url("./images/diagram.png");
+}
+.ai-assistant {
+  background-image: url("./images/ai-tech.png");
+}
+.card p {
+  text-align: center;
+  padding: 6px 12px 0 10px;
+}
+footer {
+  background-color: var(--brand-purple);
+}
+.footer-wrapper {
+  color: #fff;
+  display: flex;
+  padding: 23px 0;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1170px;
+}
+footer h3 {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+footer h4 {
+  font-size: 1.375rem;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+footer ul {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+}
+.footer-wrapper a:hover {
+  background-color: var(--brand-purple-darker);
+}
+.footer-wrapper .footer-col {
+  width: calc(25% - 15px);
+}
+.footer-wrapper .footer-col:first-of-type,
+.footer-wrapper .footer-col:last-of-type {
+  width: calc(33% - 15px);
+}
+.footer-wrapper .footer-col:not(:first-of-type):not(:last-of-type) {
+  width: calc(16.66667% - 15px);
+}
+.footer-wrapper img {
+  width: 40px;
+  padding: -2px;
+}
+footer .socials {
+  display: flex;
+}
+footer .socials li:not(:last-of-type) {
+  margin-right: 5px;
+}
+footer .socials li a {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: calc(2.5em + 5px);
+  width: calc(2.5em + 5px);
+}
+footer .socials svg {
+  height: 2.5em;
+}
+footer ul li {
+  font-weight: 600;
+}
+
+footer ul li:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+.secondsection .container {
+  flex-wrap: wrap;
+}
+
+.card {
+  margin-bottom: 15px;
+  width: calc(50% - 30px);
+}
+
+.card:first-of-type,
+.card:nth-of-type(3) {
+  margin-left: 0;
+}
+
+.card:nth-of-type(2),
+.card:last-of-type {
+  margin-right: 0;
+}
+
+footer .footer-wrapper .footer-col {
+  width: 25% !important;
+}
+
+footer .footer-wrapper .footer-col:nth-of-type(2),
+footer .footer-wrapper .footer-col:nth-of-type(3) {
+  width: 20% !important;
+}
+
+footer .footer-wrapper .footer-col:last-of-type {
+  width: 35% !important;
+}
+
+.footer-wrapper h3 {
+  font-size: 1.375rem;
+}
+
+footer .socials li a {
+  height: calc(1.875em + 5px);
+  width: calc(1.875em + 5px);
+}
+footer .socials svg {
+  height: 1.875em;
+}
+@media screen and (max-width: 767px) {
+  .nav-wrapper,
+  .secondsection,
+  .footer-wrapper {
+    margin: 0 15px;
+    width: calc(100% - 30px);
+  }
+  .secondsection .container {
+    flex-direction: column;
+  }
+
+  .secondsection .container .card {
+    margin: 15px auto;
+    width: calc(100% - 30px);
+  }
+
+  .secondsection .container .card:hover {
+    transform: scale(1.05);
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .footer-wrapper h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer-wrapper .footer-col {
+    width: 100% !important;
+  }
+
+  .footer-wrapper .footer-col:not(:first-of-type) {
+    border-top: 1px solid var(--off-white);
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    height: unset;
+    padding: 15px 0;
+  }
+
+  nav .nav-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-wrapper h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  nav .nav-wrapper h1 {
+    border-bottom: 1px solid var(--off-white);
+    margin-bottom: 10px;
+  }
+
+  nav .nav-wrapper .left,
+  nav .nav-wrapper .right {
+    width: 100%;
+  }
+
+  nav .nav-wrapper .right ul {
+    flex-direction: column;
+  }
+
+  nav .nav-wrapper .right ul li {
+    width: 100%;
+  }
+
+  nav .nav-wrapper .right ul li:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+
+  nav .nav-wrapper .right ul li a {
+    display: inline-block;
+    font-size: 1.25rem;
+    width: calc(100% - 15px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .leftsection .tagline {
+    font-size: 1.75rem;
+  }
+}
