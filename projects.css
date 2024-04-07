@@ -15,7 +15,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 a {
-  /* Adds a nice transition for any changes on anchor tag styling. */
   transition: 0.3s ease all;
 }
 nav {
@@ -24,7 +23,7 @@ nav {
   height: 80px;
   background-color: var(--brand-purple);
 }
-/*Typically containers on a desktop page tend to be 1170px in width. This helps make all of the vertical alignment on a page consistent. */
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -38,10 +37,8 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  /*Removed the margin styles applied originally*/
 }
 nav ul li:not(:last-of-type) {
-  /*This will make it so the nav items are even spacely by giving all but the last one right margin of 25px. */
   margin-right: 25px;
 }
 nav ul li a {
@@ -64,6 +61,13 @@ nav li a:hover {
 .secondsection .container {
   display: flex;
   justify-content: space-between;
+}
+.secondsection h2 {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.904);
+  color: transparent;
+  line-height: 1em;
+  letter-spacing: 2px;
+  position: relative;
 }
 main hr {
   border: 0;
@@ -110,8 +114,8 @@ main h2 {
 }
 .card-image {
   background-color: var(--brand-purple-darker);
-  height: 170px;
-  margin-bottom: 15px;
+  height: 180px;
+  margin-bottom: 5px;
   background-size: cover;
   border-radius: 3px 3px 0 0;
 }
@@ -124,7 +128,7 @@ main h2 {
   margin: 20px 50px;
   text-decoration: none;
 }
-/* Changed the card button hover state to be nicer looking and easier to read. */
+
 .card a:hover {
   background-color: var(--brand-purple);
 }
@@ -132,7 +136,6 @@ main h2 {
   padding: 10px;
 }
 .excel {
-  /* Saved all of the background images to an images folder local to your site so you'll always have the images on hand. Also if you do have to link to offsite images, it's best to link to them from their actual web location instead of a relative location like the URL a search engine gives you. */
   background-image: url("./images/excel.png");
 }
 .power-bi {
