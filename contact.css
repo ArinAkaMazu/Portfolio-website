@@ -1,84 +1,270 @@
+:root {
+  --brand-purple: #8348ff;
+  --brand-purple-darker: #5e2cc8;
+  --off-black: #151515;
+  --off-white: #f2f2f2;
+  --grey: #d4d0d0;
+}
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  background-color: rgb(10, 1, 32);
-  color: white;
+  background-color: var(--off-black);
+  color: var(--off-white);
   font-family: "Poppins", sans-serif;
 }
+a {
+  transition: 0.3s ease all;
+}
 nav {
-  display: flex;
-  justify-content: space-around;
   align-items: center;
+  display: flex;
   height: 80px;
-  background-color: #14214d;
+  background-color: var(--brand-purple);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1170px;
 }
 nav ul {
+  margin-top: 3px;
   justify-content: center;
   display: flex;
 }
 nav ul li {
   list-style: none;
-  margin: 0, 25px;
+}
+nav ul li:not(:last-of-type) {
   margin-right: 25px;
 }
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--off-white);
+  font-weight: 900;
+  padding: 5px;
 }
 nav li a:hover {
-  color: rgb(108, 131, 196);
+  background-color: var(--brand-purple-darker);
 }
-.left {
-  font-size: 1.4rem;
+footer {
+  background-color: var(--brand-purple);
 }
-main {
+.footer-wrapper {
+  color: #fff;
   display: flex;
+  padding: 23px 0;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box; /* Ensure padding is included in width */
+  margin: 0 auto;
+  width: 1170px;
 }
-
-.box {
-  background-color: #f0f0f0; /* Example background color */
-  padding: 20px; /* Adjust padding as needed */
-  border-radius: 8px; /* Rounded corners */
-  width: 32%; /* Approximately 33% width for each box */
+footer h3 {
+  font-size: 1.25em;
+  font-weight: 300;
 }
-main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box; /* Ensure padding is included in width */
+footer h4 {
+  font-size: 1.375rem;
+  font-weight: 300;
+  margin-bottom: 5px;
 }
-
-.box {
-  background-color: rgb(10, 1, 32); /* Example background color */
-  padding: 20px; /* Adjust padding as needed */
-  border-radius: 8px; /* Rounded corners */
-  width: 28%; /* Approximately 33% width for each box */
-  height: 80vh;
-  border: 2px solid white;
+footer ul {
+  list-style: none;
 }
-.box h2 {
-  text-align: center;
-}
-.box p {
-  margin: 10px;
-}
-.socials img {
-  width: 40px;
-  margin-top: 60px;
-}
-.socials a {
+footer a {
   text-decoration: none;
-  color: white;
-  font-size: 21px;
-  margin-bottom: 95px;
-  margin-left: 14px;
+  color: #fff;
+  padding: 5px;
+}
+.footer-wrapper a:hover {
+  background-color: var(--brand-purple-darker);
+}
+.footer-wrapper .footer-col {
+  width: calc(25% - 15px);
+}
+.footer-wrapper .footer-col:first-of-type,
+.footer-wrapper .footer-col:last-of-type {
+  width: calc(33% - 15px);
+}
+.footer-wrapper .footer-col:not(:first-of-type):not(:last-of-type) {
+  width: calc(16.66667% - 15px);
+}
+.footer-wrapper img {
+  width: 40px;
+  padding: -2px;
+}
+footer .socials {
+  display: flex;
+}
+footer .socials li:not(:last-of-type) {
+  margin-right: 5px;
+}
+footer .socials li a {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: calc(2.5em + 5px);
+  width: calc(2.5em + 5px);
+}
+footer .socials svg {
+  height: 2.5em;
+}
+footer ul li {
+  font-weight: 600;
+}
+
+footer ul li:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .nav-wrapper,
+  .firstsection,
+  .secondsection,
+  .footer-wrapper {
+    width: 970px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .firstsection .leftsection .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .firstsection .leftsection .buttons a {
+    width: 100%;
+  }
+
+  .firstsection .leftsection .buttons a:first-of-type {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .nav-wrapper,
+  .firstsection,
+  .secondsection,
+  .footer-wrapper {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav-wrapper,
+  .firstsection,
+  .firstsection .rightsection,
+  .secondsection,
+  .footer-wrapper {
+    margin: 0 15px;
+    width: calc(100% - 30px);
+  }
+
+  .firstsection {
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+
+  .firstsection .leftsection {
+    width: 100%;
+  }
+
+  .firstsection .leftsection h1 {
+    font-size: 1.25rem;
+  }
+
+  .firstsection .leftsection a.btn {
+    width: calc(100% - 30px);
+  }
+
+  .firstsection .rightsection img {
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .secondsection .container {
+    flex-direction: column;
+  }
+
+  .secondsection .container .card {
+    margin: 15px auto;
+    width: calc(100% - 30px);
+  }
+
+  .secondsection .container .card:hover {
+    transform: scale(1.05);
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .footer-wrapper h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .footer-wrapper .footer-col {
+    width: 100% !important;
+  }
+
+  .footer-wrapper .footer-col:not(:first-of-type) {
+    border-top: 1px solid var(--off-white);
+    padding: 15px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    height: unset;
+    padding: 15px 0;
+  }
+
+  nav .nav-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav .nav-wrapper h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  nav .nav-wrapper h1 {
+    border-bottom: 1px solid var(--off-white);
+    margin-bottom: 10px;
+  }
+
+  nav .nav-wrapper .left,
+  nav .nav-wrapper .right {
+    width: 100%;
+  }
+
+  nav .nav-wrapper .right ul {
+    flex-direction: column;
+  }
+
+  nav .nav-wrapper .right ul li {
+    width: 100%;
+  }
+
+  nav .nav-wrapper .right ul li:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+
+  nav .nav-wrapper .right ul li a {
+    display: inline-block;
+    font-size: 1.25rem;
+    width: calc(100% - 15px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .leftsection .tagline {
+    font-size: 1.75rem;
+  }
 }
