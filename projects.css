@@ -239,16 +239,16 @@ footer ul li:not(:last-of-type) {
 }
 
 footer .footer-wrapper .footer-col {
-  width: 25% !important;
+  width: 25%;
 }
 
 footer .footer-wrapper .footer-col:nth-of-type(2),
 footer .footer-wrapper .footer-col:nth-of-type(3) {
-  width: 20% !important;
+  width: 20%;
 }
 
 footer .footer-wrapper .footer-col:last-of-type {
-  width: 35% !important;
+  width: 35%;
 }
 
 .footer-wrapper h3 {
