@@ -3,151 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arin's Portfolio Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      rel="stylesheet"
-    />
+    <title>Arin's Projects</title>
     <link rel="stylesheet" href="projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMZ+8sx60hp4sG1Yt7xQ4XhX7zStl5b5s5jr6TP"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
-      <nav>
-        <div class="nav-wrapper">
-          <div class="left"><h1>Arin's Portfolio</h1></div>
-          <div class="right">
-            <ul>
-              <li><a href="index.html">Home </a></li>
-              <li><a href="contact.html">Contact Me </a></li>
-              <li><a href="Projects.html">Projects </a></li>
-            </ul>
-          </div>
+      <div class="nav-wrapper">
+        <div class="logo">
+          <h1>Arin's Portfolio</h1>
         </div>
-      </nav>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <section class="secondsection">
-        <br />
 
-        <h2>Projects</h2>
-        <div class="container">
-          <div class="card">
-            <div class="card-image excel"></div>
-            <h3>Excel Dashboard</h3>
-
-            <p>
-              An interactive dashboard made in Excel telling the revenue of a
-              coffee shop based on type and time made using graphs, pivot tables
-              and slicers.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/ArinAkaMazu/Coffee_shop_dashboard.git"
-              >Github Page</a
-            >
+    <section class="projects-section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <a href="https://github.com/your-github-repo-1" target="_blank"
+                ><i class="fas fa-project-diagram"></i
+              ></a>
+            </div>
+            <div class="timeline-content">
+              <h3>Project 1: Data Analysis Tool</h3>
+              <p>
+                A comprehensive data analysis tool to visualize and analyze
+                datasets efficiently.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-image power-bi"></div>
-            <h3>Power Bi Dashboard</h3>
-            <p>
-              Two interactive dashboards made using different graphs for
-              different soda brands and a fully interactive survey taken with
-              some power query data cleaning.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/ArinAkaMazu/PowerBi_dashboard.git"
-              >Github Page</a
-            >
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <a href="https://github.com/your-github-repo-2" target="_blank"
+                ><i class="fas fa-code"></i
+              ></a>
+            </div>
+            <div class="timeline-content">
+              <h3>Project 2: Web Scraper</h3>
+              <p>
+                An advanced web scraping tool to collect data from various
+                websites automatically.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-image qr-code"></div>
-            <h3>QR Code Generator</h3>
-            <p>
-              A QR code generator made using Python that takes input from the
-              user and generates a QR code in seconds. Any link provided is
-              checked against a validation script.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/ArinAkaMazu/QR-code-generator.git"
-              >Github Page</a
-            >
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <a href="https://github.com/your-github-repo-3" target="_blank"
+                ><i class="fas fa-database"></i
+              ></a>
+            </div>
+            <div class="timeline-content">
+              <h3>Project 3: Database Manager</h3>
+              <p>
+                A powerful database management system to handle complex database
+                operations.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card-image ai-assistant"></div>
-            <h3>Virtual AI Assistant</h3>
-            <p>
-              An AI assistant purely based on Python that can perform tasks like
-              opening a system and web apps, youtube controls, alarm, internet
-              speed test, shut itself down, and more.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/ArinAkaMazu/AI-Assistant.git"
-              >Github Page</a
-            >
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <a href="https://github.com/your-github-repo-4" target="_blank"
+                ><i class="fas fa-chart-line"></i
+              ></a>
+            </div>
+            <div class="timeline-content">
+              <h3>Project 4: Financial Dashboard</h3>
+              <p>
+                An interactive dashboard to track and manage financial data in
+                real-time.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
     <footer>
       <div class="footer-wrapper">
-        <div class="footer-col">
-          <h3>Arin's Data Analyst Portfolio</h3>
-        </div>
-        <div class="footer-col">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home </a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Socials</h4>
-          <ul class="socials">
-            <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/arin117kaushik/"
-              >
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/arin-kaushik-258502257/"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://twitter.com/ArinAkaMazu">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contacts</h4>
-          <ul>
-            <li>
-              <a href="mailto:arinkaushik60@gmail.com"
-                >arinkaushik60@gmail.com</a
-              >
-            </li>
-            <li><a href="tel:910000000000">+91 XXX-XXX-XXXX</a></li>
-          </ul>
-        </div>
+        <ul class="social-links">
+          <li>
+            <a href="https://github.com" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:email@example.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>

@@ -3,204 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arin's Portfolio Website</title>
+    <title>Arin's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
       <nav>
-        <!-- Putting everything in a wrapper so we can apply a containing width to just the content inside the header nav. -->
         <div class="nav-wrapper">
-          <div class="left"><h1>Arin's Portfolio</h1></div>
-          <div class="right">
-            <ul>
-              <li><a href="index.html">Home </a></li>
-              <li><a href="contact.html">Contact Me </a></li>
-              <li><a href="Projects.html">Projects </a></li>
-            </ul>
+          <div class="logo">
+            <h1>Arin's Portfolio</h1>
           </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </nav>
     </header>
-    <main>
-      <section class="firstsection">
-        <div class="leftsection">
-          <div class="tagline">
-            <!-- I changed the span tag with the purple class into a b tag so I could put the rest of the text on this line in its own span tag. -->
-            <span>Hi! My name is <b class="purple">Arin</b></span>
-            <pre>and I am a passionate</pre>
-            <span id="element"></span>
-          </div>
-          <div class="buttons">
-            <!-- I removed the inline styles since they aren't necessary. Inline styles are typically for when you have to style something programmatically to account for live page changes and not when you know how the styles will be all of the time.
-            Also the download HTML attribute doesn't need a value assigned. You can just type it in by itself. -->
-            <a class="btn" href="Arin_Kaushik_Resume.pdf" download>
-              <!-- So you had a button tag inside of an anchor tag before. You don't need to do this since an anchor can have button styling on it and work the same way a button would. -->
-              Download Resume
-            </a>
-            <!-- If you're going to link to a page offsite, you should put in target="_blank" on the anchor tag so it opens in a new window -->
-            <a class="btn" target="_blank" href="https://github.com/ArinAkaMazu"
-              >Visit Github</a
-            >
-          </div>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hello</h1>
+          <h1>I'm <span>Arin</span></h1>
+          <p>
+            This is Arin, a passionate Data Analyst. I love working with data to
+            derive meaningful insights and help businesses make data-driven
+            decisions.
+          </p>
+          <a href="resume.pdf" class="btn">Download Resume</a>
         </div>
-        <div class="rightsection">
-          <!-- Whenever you have an img tag on a page, make sure it has a proper value for its alt attribute. They're super important for screen readers and search engine optimization.
-          Also I downloaded the image and put it into the root folder for the page so that way you don't have to worry about the site you're loading it from not having the image when you call for it from your webpage. -->
-          <img
-            src="./images/data-analyst-illus.png"
-            alt="An illustration of a person explaining data diagrams on a laptop"
-          />
-        </div>
-      </section>
-      <section class="secondsection">
-        <hr />
-        <span class="grey">What I have done so far</span>
-        <!-- Changed this to an H2 tag since you don't want more than H1 tag on a page (it's an SEO thing). -->
-        <h2>Projects</h2>
-        <div class="container">
-          <div class="card">
-            <div class="card-image excel"></div>
-            <!-- Updated the H2's in all the cards to be H3's since we changed the Projects header to an H2 and you want H# tags to ascend numerically when you're going deeper into the DOM. -->
-            <h3>Excel Dashboard</h3>
-            <!-- I tidied up the copy on the project descriptions just so they read more clearly. -->
-            <p>
-              An interactive dashboard made in Excel telling the revenue of a
-              coffee shop based on type and time made using graphs, pivot tables
-              and slicers.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/ArinAkaMazu/Coffee_shop_dashboard.git"
-              >Github Page</a
-            >
-          </div>
-          <div class="card">
-            <div class="card-image power-bi"></div>
-            <h3>Power Bi Dashboard</h3>
-            <p>
-              Two interactive dashboards made using different graphs for
-              different soda brands and a fully interactive survey taken with
-              some power query data cleaning.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/ArinAkaMazu/PowerBi_dashboard.git"
-              >Github Page</a
-            >
-          </div>
-          <div class="card">
-            <div class="card-image qr-code"></div>
-            <h3>QR Code Generator</h3>
-            <p>
-              A QR code generator made using Python that takes input from the
-              user and generates a QR code in seconds. Any link provided is
-              checked against a validation script.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/ArinAkaMazu/QR-code-generator.git"
-              >Github Page</a
-            >
-          </div>
-          <div class="card">
-            <div class="card-image ai-assistant"></div>
-            <h3>Virtual AI Assistant</h3>
-            <p>
-              An AI assistant purely based on Python that can perform tasks like
-              opening a system and web apps, youtube controls, alarm, internet
-              speed test, shut itself down, and more.
-            </p>
-            <a
-              target="_blank"
-              href="https://github.com/ArinAkaMazu/AI-Assistant.git"
-              >Github Page</a
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-    <br />
-    <footer>
-      <!-- Changed this div's class name so it isn't confused with the actual footer tag. -->
-      <div class="footer-wrapper">
-        <!-- I've restructured your footer columns so they look and resize nicer. Every column is being given the same footer-col class since the styling is the same in terms of layout placement. -->
-        <div class="footer-col">
-          <h3>Arin's Data Analyst Portfolio</h3>
-        </div>
-        <div class="footer-col">
-          <!-- I moved the Quick Links header to outside of the unordered list for structural organization. Also I made it an H4 tag so it reads as a subheader for the H3 in your footer. -->
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home </a></li>
-            <li><a href="contact.html">Contact Me </a></li>
-            <li><a href="Projects.html">Projects </a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <!-- Same change as for the Quick Links header-->
-          <h4>Socials</h4>
-          <ul class="socials">
-            <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/arin117kaushik/"
-              >
-                <!-- I swapped out the image file logos with Font Awesome icons of them so the logos don't clash with the color palette. -->
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/arin-kaushik-258502257/"
-              >
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a target="_blank" href="https://twitter.com/ArinAkaMazu">
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <!-- Same change as for the Quick Links header-->
-          <h4>Contacts</h4>
-          <ul>
-            <!-- Anchor tags for email should have "mailto:" before the email address so the user's email client will open up a new email for them. -->
-            <li>
-              <a href="mailto:arinkaushik60@gmail.com"
-                >arinkaushik60@gmail.com</a
-              >
-            </li>
-            <!-- It's good practice to have phone numbers be in anchor tags that a user can tap on mobile to call the number given. -->
-            <li><a href="tel:910000000000">+91 XXX-XXX-XXXX</a></li>
-          </ul>
+        <div class="hero-image">
+          <img src="file.png" alt="Hero Image" />
         </div>
       </div>
+    </section>
+    <footer>
+      <div class="footer-wrapper">
+        <ul class="social-links">
+          <li>
+            <li><a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="mailto:email@example.com"><i class="fa-regular fa-envelope"></i></a></li>
+          </li>
+        </ul>
+      </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        //It's best for when you're going to make changes to the DOM after the page load to put the JavaScript for such changes inside of a DOMContentLoaded event listener.
-        var typed = new Typed("#element", {
-          strings: ["Data Analyst"],
-          typeSpeed: 95,
-        });
-      });
-    </script>
   </body>
 </html>
