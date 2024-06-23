@@ -1,7 +1,7 @@
 :root {
   --primary-color: #0a0e1a; /* Dark blue-black background */
   --secondary-color: #1e90ff; /* Bright blue for highlights */
-  --accent-color: #264653; /* Dark teal accent */
+  --accent-color: #1293c6; /* Dark teal accent */
   --text-color: #f2f2f2; /* Light text color */
   --light-text-color: #d4d0d0; /* Lighter text color */
   --btn-color: #1e90ff; /* Button color */
@@ -113,7 +113,7 @@ nav ul li a:hover {
 }
 
 .btn {
-  padding: 15px 25px;
+  padding: 13px 38px;
   color: var(--primary-color);
   background-color: var(--btn-color);
   border: none;
@@ -133,7 +133,7 @@ nav ul li a:hover {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 80px;
 }
 
 footer {
