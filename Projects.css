@@ -196,7 +196,9 @@ footer {
 .footer-social-links li a:hover {
   color: var(--btn-color);
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
 .footer-wrapper p {
   margin-top: 21px;
   width: 100%;

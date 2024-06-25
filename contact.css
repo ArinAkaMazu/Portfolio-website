@@ -137,6 +137,9 @@ footer {
   text-align: center;
   border-top: 1px solid var(--accent-color);
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
 .footer-wrapper {
   display: flex;
