@@ -71,10 +71,10 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   background-color: var(--primary-color);
   color: var(--text-color);
   text-align: center;
+  padding-top: 80px; /* Add padding to create space */
 }
 
 .container {
@@ -137,6 +137,7 @@ footer {
   text-align: center;
   border-top: 1px solid var(--accent-color);
 }
+
 ::-webkit-scrollbar {
   width: 10px;
 }
